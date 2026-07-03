@@ -12,4 +12,5 @@ El sistema realiza procesamiento dinámico usando algoritmos que automatizan los
 2. Cálculo promediado ponderado de la temperatura con redondeo decimal.
 3. Conteo absoluto de frecuencias según tipología del cielo (días soleados, lluviosos, etc.).
 4. Evaluación condicional de strings de resumen basados en balances meteorológicos dominantes.
-*Proyecto desarrollado para la entrega del Módulo 4.*
+
+## Proyecto desarrollado para la entrega del Módulo
