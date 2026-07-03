@@ -76,3 +76,4 @@ const lugares = [
     ]
   }
 ];
+// Fin del modelo de datos de los lugares
