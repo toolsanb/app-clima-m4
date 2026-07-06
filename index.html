@@ -3,101 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App de Clima - Panel de Control</title>
-    
-    <style>
-        /* Estilos básicos para que la interfaz se vea ordenada antes de que agregues tus propios diseños */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        #contenedor-home {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .clima-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .clima-card .temp {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #007BFF;
-        }
-        .btn-ver, #btn-volver {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .btn-ver:hover, #btn-volver:hover {
-            background-color: #0056b3;
-        }
-        #seccion-detalle {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .grilla-dias {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .dia-item {
-            background: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            border: 1px solid #eee;
-        }
-        .resumen-caja {
-            background-color: #e3f2fd;
-            border-left: 5px solid #2196f3;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 4px;
-        }
-    </style>
+    <title>Monitoreo de clima</title>
+    <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
 
-    <header>
-        <h1>Panel de Monitoreo Climático</h1>
-        <p>Módulo 4: Lógica y Estadísticas Semanales</p>
-    </header>
+    <nav class="navbar">
+        <div class="logo">⛅ ClimaApp</div>
+        <div class="menu">
+            <a href="#" id="nav-inicio">Inicio</a>
+            <a href="#" id="nav-detalles">Detalles</a>
+        </div>
+    </nav>
 
-    <main>
-        <div id="contenedor-home">
-            </div>
+    <main class="container">
+        <div class="header-container">
+            <h1>Monitoreo de Clima</h1>
+            <p>Módulo 4: Lógica y Estadísticas Semanales</p>
+        </div>
 
-        <div id="seccion-detalle" style="display: none;">
-            </div>
+        <div class="search-container">
+            <input type="text" id="input-buscar" placeholder="Buscar ciudad...">
+            <button id="btn-buscar">Buscar</button>
+        </div>
+
+        <div id="contenedor-home"></div>
+
+        <div id="seccion-detalle"></div>
     </main>
 
-    <script src="datos.js"></script>
-    <script src="app.js"></script>
-    <script src="dom.js"></script>
+    <footer class="main-footer">
+        <p>© 2026 ClimaApp - Desarrollado por Sergio Nuñez / Toolsanb</p>
+        <p>Bootcamp Academy • Módulo de Refactorización Avanzada</p>
+    </footer>
 
+    <script src="datos.js"></script>
+    <script src="dom.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
